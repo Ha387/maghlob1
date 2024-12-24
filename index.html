@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقلوب عدد</title>
+    <style>
+        body {
+            font-family: B nazanin;
+            direction: rtl;
+            text-align: center;
+            margin-top: 50px;
+            background-color: darkturquoise;
+            color: darkblue;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            font-family: B nazanin;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>مقلوب عدد را وارد کنید</h2>
+    <input type="number" id="userNumber" placeholder="عدد خود را وارد کنید">
+    <button onclick="ab()">نمایش مقلوب</button>
+    <p id="result"></p>
+
+    <img src="IMG_20241224_145442_689.jpg" alt="">
+    <script>
+        function ab() 
+        {
+
+            var number = document.getElementById("userNumber").value;
+            var reversed = number.split("").reverse().join(""); 
+            document.getElementById("result").innerText = "مقلوب عدد وارد شده: " + reversed;
+        }
+    </script>
+</body>
+</html>
